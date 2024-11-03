@@ -22,8 +22,8 @@ Pour le bon fonctionnement du projet, vous aurez besoin de plusieurs éléments.
 ## Lancement du projet
 
 - Pour lancer le projet, vous devrez tout d'abord créer les variables d'environnement pour Java et Maven.  
-- Pour lancer le serveur Java, dans un terminal placez vous dans le dossier `/Back-End` et entrez la commande `mvn spring-boot:run`.    
-- Pour lancer le serveur Angular, dans un terminal placez vous dans le dossier `/Front-end` et entrez la commande `npm run start`.  
+- Pour lancer le serveur Java, dans un terminal placez vous dans le dossier `/back/pocchat` et entrez la commande `mvn spring-boot:run`.    
+- Pour lancer le serveur Angular, dans un terminal placez vous dans le dossier `/front` et entrez la commande `npm run start`.  
 
 ## Acceder à l'application
 
