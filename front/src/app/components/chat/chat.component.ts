@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { ChatMessage } from '../../interfaces/chat-message';
 import { ChatService } from '../../services/chat.service';
 
@@ -20,7 +20,8 @@ export class ChatComponent implements OnInit {
 
   constructor(
     private chatService: ChatService,
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
+    private router: Router
   ) {
   }
 
@@ -39,6 +40,11 @@ export class ChatComponent implements OnInit {
       this.chatService.sendMessage(this.content, this.sender);
       this.content = '';
     }
+  }
+
+  public goBack(): void{
+    this.router.navigate(['/']);
+
   }
 
 }
