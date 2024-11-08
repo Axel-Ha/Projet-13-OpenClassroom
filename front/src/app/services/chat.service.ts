@@ -42,7 +42,6 @@ export class ChatService {
       content,
       date: new Date()
     };
-    console.log(chatMessage); 
     this.client.publish({   
       destination: '/app/sendMessage', // Publish the message to the /app/sendMessage endpoint
       body: JSON.stringify(chatMessage) 

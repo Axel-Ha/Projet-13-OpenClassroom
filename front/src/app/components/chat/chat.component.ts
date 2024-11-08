@@ -10,7 +10,7 @@ import { ChatService } from '../../services/chat.service';
   standalone: true,
   imports: [FormsModule, CommonModule],
   templateUrl: './chat.component.html',
-  styleUrl: './chat.component.scss'
+  styleUrls: ['./chat.component.scss'],
 })
 export class ChatComponent implements OnInit {
 

@@ -1,7 +1,8 @@
-<div>
-    <h2>Chat</h2>
-    <div *ngFor="let message of messages">
-        <p><small>{{ message.date | date:'short' }} </small> <strong>{{ message.sender }}</strong>: {{ message.content }} </p>
+<div class="chat-container">
+    <h2> Chat {{sender}}</h2>
+    <div *ngFor="let message of messages" >
+        <p><small>{{ message.date | date:'short' }}</small> 
+           <strong>{{ message.sender }}</strong>: {{ message.content }}</p>
     </div>
     <input [(ngModel)]="content" placeholder="Entrez votre message" (keyup.enter)="sendMessage()" />
     <button (click)="sendMessage()">Envoyer</button>
