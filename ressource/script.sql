@@ -20,11 +20,11 @@ CREATE TABLE Vehicles (
     agency_id INT,
     brand VARCHAR(50) NOT NULL,
     model VARCHAR(50) NOT NULL,
-    transmission VARCHAR(20) NOT NULL,
-    fuel VARCHAR(20) NOT NULL,
-    type VARCHAR(20) NOT NULL,
-    category VARCHAR(20) NOT NULL,
-    acriss VARCHAR(20) NOT NULL,
+    transmission VARCHAR(5) NOT NULL,
+    fuel VARCHAR(5) NOT NULL,
+    type VARCHAR(5) NOT NULL,
+    category VARCHAR(5) NOT NULL,
+    acriss VARCHAR(10) NOT NULL,
     FOREIGN KEY (agency_id) REFERENCES Agencies(id)
 );
 
