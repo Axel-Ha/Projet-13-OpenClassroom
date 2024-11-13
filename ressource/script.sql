@@ -22,9 +22,9 @@ CREATE TABLE Vehicles (
     model VARCHAR(50) NOT NULL,
     transmission VARCHAR(20) NOT NULL,
     fuel VARCHAR(20) NOT NULL,
-    seats INT NOT NULL,
-    doors INT NOT NULL,
-    category VARCHAR(50) NOT NULL,
+    type VARCHAR(20) NOT NULL,
+    category VARCHAR(20) NOT NULL,
+    acriss VARCHAR(20) NOT NULL,
     FOREIGN KEY (agency_id) REFERENCES Agencies(id)
 );
 
