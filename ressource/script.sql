@@ -15,6 +15,22 @@ CREATE TABLE Users (
     role VARCHAR(20) DEFAULT 'CLIENT'
 );
 
+<<<<<<< HEAD
+=======
+CREATE TABLE Vehicles (
+    id INT PRIMARY KEY,
+    agency_id INT,
+    brand VARCHAR(50) NOT NULL,
+    model VARCHAR(50) NOT NULL,
+    transmission VARCHAR(5) NOT NULL,
+    fuel VARCHAR(5) NOT NULL,
+    type VARCHAR(5) NOT NULL,
+    category VARCHAR(5) NOT NULL,
+    acriss VARCHAR(10) NOT NULL,
+    FOREIGN KEY (agency_id) REFERENCES Agencies(id)
+);
+
+>>>>>>> 483408f7893036689a33ada535ef3ba74dba0b45
 CREATE TABLE Agencies (
     id INT PRIMARY KEY AUTO_INCREMENT,
     name VARCHAR(255) NOT NULL,
