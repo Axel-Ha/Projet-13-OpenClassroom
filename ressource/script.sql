@@ -28,7 +28,6 @@ CREATE TABLE Vehicles (
     FOREIGN KEY (agency_id) REFERENCES Agencies(id)
 );
 
->>>>>>> 483408f7893036689a33ada535ef3ba74dba0b45
 CREATE TABLE Agencies (
     id INT PRIMARY KEY AUTO_INCREMENT,
     name VARCHAR(255) NOT NULL,
