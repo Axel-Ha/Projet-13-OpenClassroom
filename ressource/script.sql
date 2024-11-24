@@ -15,8 +15,6 @@ CREATE TABLE Users (
     role VARCHAR(20) DEFAULT 'CLIENT'
 );
 
-<<<<<<< HEAD
-=======
 CREATE TABLE Vehicles (
     id INT PRIMARY KEY,
     agency_id INT,
